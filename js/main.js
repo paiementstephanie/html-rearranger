@@ -1,13 +1,21 @@
-var $newHeading = $('<h1>');
+var $belowHeading = $('<h1>');
 var $body = $('body');
-var $ul = $('ul')
+var $belowList = $('<ul>')
+var $aboveHeading = $('<h1>');
+var $aboveList = $('<ul>')
 
 
-$newHeading.html('Below Ground Veggies');
+$belowHeading.html('Below Ground Veggies');
 
-$body.prepend($newHeading);
+$body.append($belowHeading);
 
+$body.append($belowList);
 
+$aboveHeading.html('Above Ground Veggies');
+
+$body.append($aboveHeading);
+
+$body.append($aboveList);
 
 $('ul li').each(function () {
 //	if ('ul li') == '.below')
